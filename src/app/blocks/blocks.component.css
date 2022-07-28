@@ -1,0 +1,46 @@
+.block {
+    position: absolute;
+    padding: 4px;
+    transition-timing-function: linear;
+}
+
+.opacity-cincuenta {
+    opacity: 50% !important;
+}
+
+.op-0 {
+    opacity: 0;
+    transition-delay: 1s;
+    transition: opacity .2s;
+    -webkit-transition: opacity .2s;
+    -moz-transition: opacity .2s;
+    -ms-transition: opacity .2s;
+    -o-transition: opacity .2s;
+}
+
+.transitionblock {
+    transition: top .5s;
+    -webkit-transition: top .5s;
+    -moz-transition: top .5s;
+    -ms-transition: top .5s;
+    -o-transition: top .5s;
+}
+
+.blockcolor {
+    color: white;
+    height: calc(100%);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.blocknumber {
+    color: white;
+    font-size: 1.7rem;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

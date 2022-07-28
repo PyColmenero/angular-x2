@@ -1,0 +1,50 @@
+.game {
+    height: calc((var(--vh, 1vh) * 100) - 20vh - 3rem);
+    background-color: #29283a;
+    padding: 4vw;
+}
+
+.game_outline {
+    height: 100%;
+    width: 100%;
+    padding: 2vw;
+    padding-top: 0;
+    border: 2px solid white;
+    overflow: hidden;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.firstcolumn {
+    border-left: 1px solid rgb(85, 85, 85);
+}
+
+.column {
+    width: calc(100% / 5);
+    border-right: 1px solid rgb(85, 85, 85);
+    height: calc(100% - 4vw);
+}
+
+.columns {
+    width: calc(100% - 4vw);
+    transition: background-color .2s;
+    -webkit-transition: background-color .2s;
+    -moz-transition: background-color .2s;
+    -ms-transition: background-color .2s;
+    -o-transition: background-color .2s;
+}
+
+.bg-columns {
+    background-image: linear-gradient(#3A394E, #29283a);
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.selectedcolumn {
+    background-color: #29283a6c;
+}

@@ -1,0 +1,23 @@
+<div class="game">
+    <div class="game_outline position-relative">
+        <div class="position-absolute h-100 top-0 columns bg-columns">
+            <div class="h-100 w-100 position-relative d-flex ">
+                <div [class.selectedcolumn]="clickservice.selectedcolumn == 0" class="column firstcolumn"></div>
+                <div [class.selectedcolumn]="clickservice.selectedcolumn == 1" class="column"></div>
+                <div [class.selectedcolumn]="clickservice.selectedcolumn == 2" class="column"></div>
+                <div [class.selectedcolumn]="clickservice.selectedcolumn == 3" class="column"></div>
+                <div [class.selectedcolumn]="clickservice.selectedcolumn == 4" class="column"></div>
+            </div>
+        </div>
+        <app-blocks #game></app-blocks>
+        <div class="position-absolute h-100 top-0 columns ">
+            <div class="h-100 w-100 position-relative d-flex ">
+                <div (click)="game.click(0)" class="w-20"></div>
+                <div (click)="game.click(1)" class="w-20"></div>
+                <div (click)="game.click(2)" class="w-20"></div>
+                <div (click)="game.click(3)" class="w-20"></div>
+                <div (click)="game.click(4)" class="w-20"></div>
+            </div>
+        </div>
+    </div>
+</div>

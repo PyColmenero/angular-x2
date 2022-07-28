@@ -1,0 +1,26 @@
+.controllers {
+    height: 20vh;
+    background-color: #29283A;
+    padding: 1vh 0;
+}
+
+.playbutton {
+    width: 14vh;
+    height: 14vh;
+    background-color: yellow;
+    margin: 2vh auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.playbutton>span {
+    color: white;
+    font-size: 8vh;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

@@ -1,0 +1,26 @@
+<div class="blocks position-relative">
+    <div *ngFor="let block of blocks_list" class="block transitionblock" style="width: {{block_size}}px; height: {{block_size}}px; left: {{block.getx()}}px; top: {{block.gety()}}px;">
+        <div class="blockcolor" style="background-color: {{block.color}};">
+            <span class="blocknumber position-absolute top-50 start-50 translate-middle">
+                {{block.getnumber()}}
+            </span>
+        </div>
+    </div>
+    <!-- [class.opacity-75]="swiped" -->
+    <div class="block op-0" [class.opacity-cincuenta]="clickservice.selectedcolumn != -1" style="width: {{block_size}}px; height: {{block_size}}px; left: {{_block.getx()}}px; top: {{_block.gety()}}px;">
+        <div class="blockcolor" style="background-color: {{_block.color}};">
+            <span class="blocknumber position-absolute top-50 start-50 translate-middle">
+                {{_block.number}}
+            </span>
+        </div>
+    </div>
+
+    <div *ngIf="show_level_up" class="block levelup start-50 translate-middle" style="width: {{block_size*2}}px; height: {{block_size*2}}px; top: {{game_center}}px ;">
+        <div class="blockcolor" style="background-color: {{level_color}};">
+            <span class="blocknumber position-absolute top-50 start-50 translate-middle">
+                {{level_number}}
+            </span>
+        </div>
+    </div>
+
+</div>
