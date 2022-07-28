@@ -570,8 +570,13 @@ export class BlocksComponent implements OnInit {
 	set_game_size() {
 		this.browser_width = window.innerWidth;
 		this.browser_height = window.innerHeight;
-		this.game_width = (this.browser_width * 0.88) - 4;
-		this.game_padding = (this.browser_width - this.game_width) / 2;
+		if(this.browser_width < this.browser_height){
+			this.game_width = (this.browser_width * 0.88) - 4;
+			this.game_padding = (this.browser_width - this.game_width) / 2;
+		} else {
+			this.game_width = (this.browser_height * 0.44) - 4;
+			this.game_padding = (this.browser_width - this.game_width) / 2;
+		}
 
 		this.block_size = this.game_width / this.columns_amount;
 	}

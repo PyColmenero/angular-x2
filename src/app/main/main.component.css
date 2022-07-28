@@ -48,3 +48,15 @@
 .selectedcolumn {
     background-color: #29283a6c;
 }
+
+@media (min-aspect-ratio: 10/10) {
+    .game_outline {
+        padding: 1vh;
+    }
+    .columns {
+        width: calc(100% - 2vh);
+    }
+    .game {
+        padding: 2vh;
+    }
+}
